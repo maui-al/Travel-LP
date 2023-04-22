@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --fontlogo: 'Times New Roman', Times, serif; 
+    --color: rgb(255,255,255);
+}
+body{
+    width:100%;
+    color: rgb(255,255,255);
+    position: relative;
+}
+.front-page{
+    width:100%;
+    height:100vh;
+    background: url(img/Beach.jpeg);
+    background-size: cover;
+    position: relative;
+}
+.front-page:before{
+    content:'';
+    width:100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity:0.4;
+    animation: down 1s ease-in-out ;
+}
+
+
+@keyframes down {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.front-page .company-name{
+    width: 100%;
+    height:20vh;
+    color: var(--color);
+    font-family: var(--fontlogo);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+.front-page .company-name .logo{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 2em;
+}
+.front-page .company-slogan{
+    width:100%;
+    height: 60vh;
+    color: inherit;
+    filter: brightness(100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.front-page .company-slogan h1{
+    width:80%;
+    height: 50%;
+    /*font-family:'Courgette', cursive;*/
+    word-spacing: 0.3em;
+    color: rgb(255,255,255);
+    filter: brightness(100%);
+    font-size: 3.3em;
+    text-align: center;
+    position: relative;
+}
+.front-page .book-now{
+    width:100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.front-page .book-now #box-1{
+    width:7em;
+    height:2em;
+    color: rgb(0, 0, 0);
+    background: rgb(217, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.second-page .intro{
+    width:50%;
+    height: 100%;
+    background: rgb(11, 190, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.second-page .intro h1{
+    font-size: 4em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+.second-page .intro p{
+    margin-bottom: 2em;
+    font-size: 1.3em;
+}
+.second-page .side-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-page .side-img .img-1, .img-2{
+    width: 100%;
+    height: 50%;
+}
+.second-page .side-img .img-1{
+    background-image: url(img/farm.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.second-page .side-img .img-2{
+    background-image: url(img/chocolate-hills-plants-7017773.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.third-page{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.third-page .packages{
+    width: 50%;
+    height: 100vh;
+    background: rgb(0, 51, 11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.third-page .packages h1{
+    font-size: 4em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+.third-page .packages p{
+    /*margin-bottom: 2em;*/
+    font-size: 1.3em;
+}
+.third-page .packages #box-1{
+    width:7em;
+    height:2em;
+    color: rgb(0, 0, 0);
+    background: rgb(217, 255, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2em;
+}
+.third-page .package-1{
+    width: 50%;
+    height: 100vh;
+    background: url(img/hobbit\ hill.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third-page .package-1 .container{
+    width:60%;
+    height:15em;
+    color: rgb(0, 0, 0);
+    background: rgb(238, 238, 238);
+    border: 0.3em solid rgb(217, 255, 0);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding:1em;
+}
+.third-page .package-1 .container #inquire{
+    text-decoration: underline;
+    color: rgb(10, 141, 141);
+}
+.last-page{
+    width:100%;
+    height: 100vh;
+    background: url(img/boracay.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.last-page:before{
+    content:'';
+    width:100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top:300vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity:0.4;
+}
+.last-page h1{
+    font-size: 3em;
+    margin-top: 3em;
+    position: relative;
+}
+
+.last-page footer{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    background: rgb(217, 255, 0);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.last-page footer .soc-med{
+    width:30%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.last-page footer .soc-med p{
+    font-size: 0.7em;
+}
+.last-page footer .soc-med h4{
+    margin-top: 0.4em;
+}
